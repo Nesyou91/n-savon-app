@@ -1,11 +1,48 @@
-<div class="container">
-    <header class="d-flex justify-content-center py-3">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-        <li class="nav-item"><a routerLink="recettes" class="nav-link px-2 text-body-secondary"routerLinkActive="active">Recette</a></li>
-        <li class="nav-item"><a routerLink="confidentialite" class="nav-link px-2 text-body-secondary"routerLinkActive="active">confidentialite</a></li>
-        <li class="nav-item"><a routerLink="ingredients-manager" class="nav-link px-2 text-body-secondary"routerLinkActive="active">Ingredient</a></li>
-        <li class="nav-item"><a routerLink="calculateur-recette" class="nav-link px-2 text-body-secondary" routerLinkActive="active">Calculateur</a></li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">
+      <img src="assets/images/soap-logo.png" alt="SavonApp Logo" width="40" height="40" class="d-inline-block align-top me-2" onerror="this.src='https://via.placeholder.com/40'; this.onerror='';">
+      <span class="fw-bold text-primary">SavonApp</span>
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <i class="bi bi-house-door me-1"></i> Accueil
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="recettes" routerLinkActive="active">
+            <i class="bi bi-journal-text me-1"></i> Recettes
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-layout-text-window me-1"></i> Ingrédients
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="ingredients-manager" routerLinkActive="active">Gérer les ingrédients</a></li>
+            <li><a class="dropdown-item" routerLink="ingredients-create" routerLinkActive="active">Créer un ingrédient</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="calculateur-recette" routerLinkActive="active">
+            <i class="bi bi-calculator me-1"></i> Calculateur
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="confidentialite" routerLinkActive="active">
+            <i class="bi bi-shield-check me-1"></i> Confidentialité
+          </a>
+        </li>
       </ul>
-    </header>
-</div>
+    </div>
+  </div>
+</nav>

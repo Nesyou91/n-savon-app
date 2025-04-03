@@ -1,10 +1,108 @@
-<section class="home-hero d-flex align-items-center text-center text-dark" style="min-height: 80vh;"
-    style="min-height: 80vh; background: url('assets/images/partenariat.jpg') center/cover no-repeat;">
-    <div class="container py-5">
-      <h1 class="display-4 fw-bold mb-3">Bienvenue sur la Home</h1>
-      <p class="lead mx-auto" style="max-width: 700px;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
+<!-- Hero Section -->
+<section class="hero position-relative d-flex align-items-center" style="min-height: 70vh; background: linear-gradient(135deg, #0d6efd, #6610f2);">
+  <div class="container text-center text-white py-5">
+    <h1 class="display-4 fw-bold mb-4">Formulez vos savons artisanaux</h1>
+    <p class="lead mx-auto mb-5" style="max-width: 700px;">
+      Créez, calculez et gérez vos recettes de savon avec notre application intuitive.
+      Maîtrisez les propriétés de vos produits avec précision.
+    </p>
+    <div class="d-flex justify-content-center gap-3">
+      <a routerLink="/calculateur-recette" class="btn btn-light btn-lg px-4 py-2">
+        <i class="bi bi-calculator me-2"></i>Créer une recette
+      </a>
+      <a routerLink="/recettes" class="btn btn-outline-light btn-lg px-4 py-2">
+        <i class="bi bi-journal-text me-2"></i>Voir les recettes
+      </a>
     </div>
+  </div>
 </section>
-  
+
+<!-- Features Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Fonctionnalités clés</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="feature-icon bg-primary bg-opacity-10 p-3 rounded-circle mb-3 mx-auto" style="width: 80px; height: 80px;">
+              <i class="bi bi-calculator text-primary" style="font-size: 2rem;"></i>
+            </div>
+            <h4>Calculateur de recette</h4>
+            <p class="text-muted">Formulez vos recettes avec précision en calculant automatiquement les pourcentages et les propriétés physiques de vos savons.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="feature-icon bg-primary bg-opacity-10 p-3 rounded-circle mb-3 mx-auto" style="width: 80px; height: 80px;">
+              <i class="bi bi-database text-primary" style="font-size: 2rem;"></i>
+            </div>
+            <h4>Gestion des ingrédients</h4>
+            <p class="text-muted">Créez et gérez votre base de données d'ingrédients personnalisés avec leurs propriétés spécifiques.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <div class="feature-icon bg-primary bg-opacity-10 p-3 rounded-circle mb-3 mx-auto" style="width: 80px; height: 80px;">
+              <i class="bi bi-graph-up text-primary" style="font-size: 2rem;"></i>
+            </div>
+            <h4>Analyse graphique</h4>
+            <p class="text-muted">Visualisez les propriétés de vos savons à l'aide de graphiques radar pour optimiser vos formulations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Getting Started Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="bg-primary bg-opacity-10 p-5 rounded-3 text-center">
+          <i class="bi bi-droplet-half text-primary" style="font-size: 5rem;"></i>
+          <h3 class="mt-3">Savonnerie artisanale</h3>
+          <p class="text-muted">Un art ancestral à portée de main grâce à notre outil de formulation</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="mb-4">Comment démarrer</h2>
+        <div class="d-flex mb-4">
+          <div class="me-3">
+            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center text-white" style="width: 40px; height: 40px;">1</div>
+          </div>
+          <div>
+            <h5>Créez votre bibliothèque d'ingrédients</h5>
+            <p class="text-muted">Commencez par ajouter les huiles, beurres et additifs que vous utilisez habituellement.</p>
+          </div>
+        </div>
+        <div class="d-flex mb-4">
+          <div class="me-3">
+            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center text-white" style="width: 40px; height: 40px;">2</div>
+          </div>
+          <div>
+            <h5>Utilisez le calculateur de recette</h5>
+            <p class="text-muted">Créez votre première formulation en sélectionnant vos ingrédients et leurs quantités.</p>
+          </div>
+        </div>
+        <div class="d-flex mb-4">
+          <div class="me-3">
+            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center text-white" style="width: 40px; height: 40px;">3</div>
+          </div>
+          <div>
+            <h5>Enregistrez et modifiez vos recettes</h5>
+            <p class="text-muted">Consultez les propriétés calculées et ajustez votre formulation pour obtenir le savon parfait.</p>
+          </div>
+        </div>
+        <a routerLink="/ingredients-manager" class="btn btn-primary px-4">
+          <i class="bi bi-arrow-right-circle me-2"></i>Commencer maintenant
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
